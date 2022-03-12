@@ -67,7 +67,6 @@
     .content {
       &__title {
         z-index: 10;
-        // position: absolute;
         color: $color-white-1;
         h2 {
           font-weight: $font-weight-bold;
@@ -200,7 +199,7 @@
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
-                border-radius: 3px;
+                border-radius: $radius-btn;
                 height: 100%;
                 background-color: transparent;
                 background-repeat: no-repeat;
