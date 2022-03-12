@@ -2,32 +2,6 @@
 
 template파일입니다.
 
-## live-sass complier
-
-```
-"liveSassCompile.settings.formats":[
-    // This is Default.
-    // {
-    //     "format": "expanded",
-    //     "extensionName": ".css",
-    //     "savePath": "~/../css/"
-    // },
-    // You can add more
-    // {
-    //     "format": "compressed",
-    //     "extensionName": ".min.css",
-    //     "savePath": "~/../css/"
-    // },
-    // More Complex
-    {
-        "format": "compressed",
-        "extensionName": ".css",
-        "savePath": "~/../css/"
-    }
-],
-"liveSassCompile.settings.generateMap":false, // .map 제거
-```
-
 ## 폰트
 
 https://fonts.google.com/
@@ -35,17 +9,13 @@ https://fonts.google.com/
 ## 파일 디렉토리
 
 ```
-
 index.html // 메인페이지
-pages - detail.html // 상세페이지
-      - notice.html // 공지사항
-      - compnany_intro.html // (회사소개페이지)
 
 fonts ┬ Noto Sans Kr (한글) - 4개씩 400 500 700 900
       └ Open Sans (영문) - 4개씩
 
 assets ┬ constant (json)
-				 image
+       └ image
 
 css(sass)
     style.scss
@@ -108,4 +78,30 @@ css(sass)
                     ├ detail.js
                 ├ notice.js
                 └ compnany_intro.js
+```
+
+### live-sass complier
+
+```
+"liveSassCompile.settings.formats":[
+    // This is Default.
+    {
+         "format": "expanded",
+         "extensionName": ".css",
+         "savePath": "~/../css/"
+    },
+    // You can add more
+    {
+         "format": "compressed",
+         "extensionName": ".min.css",
+         "savePath": "~/../css/"
+    },
+    // More Complex
+    {
+        "format": "compressed",
+        "extensionName": ".css",
+        "savePath": "~/../css/"
+    }
+],
+"liveSassCompile.settings.generateMap":false, // .map 제거
 ```
