@@ -63,7 +63,6 @@
 
   &__visual {
     background-image: url("../../assets/image/bg__main-visual.png");
-    // background-image: url("./assets/image/bg__main-visual.png");
     background-position: center center;
     background-size: 1660px auto;
     background-repeat: no-repeat;
@@ -134,9 +133,10 @@
   }
 
   &__fixed {
+    background-attachment: fixed;
     background-image: url("../../assets/image/bg__main-fixed.png");
-    background-position: center bottom;
-    background-size: $width1280 auto;
+    background-position: center center;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: $color-black-0;
     height: 44.5rem;
