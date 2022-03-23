@@ -10,15 +10,20 @@
 </head>
 
 <body>
+    <div class="warning">
+        <div class="inner">
+            <img src="./assets/image/icon_warning.svg" />본 페이지는 포트폴리오 용도로 실재하지 않는 가상의 회사입니다.
+        </div>
+    </div>
     <!-- header (s) -->
     <header class="header">
-        <div class="header__inner">
-            <h1 class="header__logo">
-                <a class="header__logo-link" href="/index.html">
+        <div class="inner">
+            <h1 class="logo">
+                <a href="/index.html">
                     <img class="img" src="./assets/image/logo_header.svg" alt="header logo">
                 </a>
             </h1>
-            <nav class="navigation-right">
+            <nav class="navigation">
                 <ul>
                     <li>
                         <a href="javascript:void(0);">회사소개</a>
@@ -26,7 +31,7 @@
                     <li>
                         <a href="javascript:void(0);">문의하기</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="javascript:void(0);">소개서 받기</a>
                     </li>
                 </ul>
@@ -37,25 +42,55 @@
     <!-- main (s) -->
     <main class="main">
         <!-- section__visual (s) -->
-        <section class="section section__visual">
-            <div class="section__inner">
-                <div class="content__title">
-                    <h2>비즈니스 성공을 위한 <br />차별화된 호스팅이 필요하세요?</h2>
-                    <p>Cloudgroup은 민첩성과 연속성을 개선하기 위해 시장 최고의 보안, <br />엔터프라이즈 확장성 및 개방형 혁신을 제공합니다.</p>
+        <section class="section section-visual">
+            <div class="inner">
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="title">
+                                <h2>비즈니스 성공을 위한 <br />차별화된 호스팅이 필요하세요?</h2>
+                                <p>Cloudgroup은 민첩성과 연속성을 개선하기 위해 시장 최고의 보안, <br />엔터프라이즈 확장성 및 개방형 혁신을 제공합니다.</p>
+                            </div>
+                            <img src="./assets/image/visual_slide_1.png" alt="visual_slide_1" />
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">
+                                <h2>비지니스 목표를 달성할 수 있도록 <br />서비스 및 솔루션을 제공합니다</h2>
+                                <p>최상의 IT 서비스를 제공하여 비용절감과 <br />생산성 향상에 도움 드리겠습니다.</p>
+                            </div>
+                            <img src="./assets/image/visual_slide_2.png" alt="visual_slide_2" />
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">
+                                <h2>효율적으로 데이터를 분석해 <br />최적화 된 클라우드환경을 제공합니다</h2>
+                                <p>기업 교육에 필요한 모든 환경을 <br />신속하고 스마트하게 제공합니다./p>
+                            </div>
+                            <img src="./assets/image/visual_slide_3.png" alt="visual_slide_3" />
+                        </div>
+                    </div>
+                    <div class="swiper-controller">
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-progress-bar">
+                            <span class="slide_progress-bar"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- section__visual (e) -->
 
         <!-- section__intro (s) -->
-        <section class="section section__intro">
-            <div class="section__inner">
-                <div class="content__title">
+        <section class="section section-intro">
+            <div class="inner">
+                <h2 class="title">
                     Cloudgroup의 <br />데이터 클라우드는 <br />글로벌을 선도합니다.
-                </div>
-                <div class="content__description">
+                </h2>
+                <div class="description">
                     <p>가장 개방적이고 안전한 비즈니스용 클라우드 부터 <br />차세대를 이끌 하이브리드까지 고급 데이터 및 AI 기능 <br />전문 지식을 제공하는 상품을 만나보세요.</p>
-                    <div class="btn__container">
+                    <div class="btn-container">
                         <button class="btn btn--primary" type="button">소개서 받기</button>
                     </div>
                 </div>
@@ -64,40 +99,40 @@
         <!-- section__intro (e) -->
 
         <!-- section__fixed (s) -->
-        <section class="section__fixed"></section>
+        <section class="section section-fixed"></section>
         <!-- section__fixed (e) -->
 
         <!-- section__description (s) -->
-        <div class="section__description">
-            <div class="section__inner">
-                <div class="content__title">
+        <div class="section section-description">
+            <div class="inner">
+                <h2 class="title">
                     Cloudgroup의<br />데이터 클라우드는 다릅니다.
-                </div>
-                <p class="content__description">
+                </h2>
+                <p class="description">
                     비즈니스의 혁신을 일으킬 상품들을 만나보세요.
                 </p>
-                <div class="content__list">
+                <div class="list-wrapper">
                     <ul>
                         <li>
-                            <div class="list__container">
-                                <div class="list__title">베이직 비즈니스 클라우드 솔루션</div>
-                                <div class="list__description">글로벌 비즈니스에 최적화된 가장 개방적이면서도 안전한 <br />엔터프라이즈용 베이직 비즈니스
+                            <div class="list-item">
+                                <div class="title">베이직 비즈니스 클라우드 솔루션</div>
+                                <div class="description">글로벌 비즈니스에 최적화된 가장 개방적이면서도 안전한 <br />엔터프라이즈용 베이직 비즈니스
                                     클라우드입니다.
                                 </div>
                             </div>
-                            <div class="btn__container">
-                                <button class="btn btn--primary_arrow"></button>
+                            <div class="btn-container">
+                                <button class="btn btn-primary_arrow" button-type="button"></button>
                             </div>
                         </li>
                         <li>
-                            <div class="list__container">
-                                <div class="list__title">하이브리드 클라우드 솔루션</div>
-                                <div class="list__description">Cloudgroup만의 기술 노하우가 담긴 고급 데이터 및 AI 기능 <br />전문 지식을 제공하는
+                            <div class="list-item">
+                                <div class="title">하이브리드 클라우드 솔루션</div>
+                                <div class="description">Cloudgroup만의 기술 노하우가 담긴 고급 데이터 및 AI 기능 <br />전문 지식을 제공하는
                                     하이브리드 클라우드입니다.
                                 </div>
                             </div>
-                            <div class="btn__container">
-                                <button class="btn btn--primary_arrow"></button>
+                            <div class="btn-container">
+                                <button class="btn btn-primary_arrow" button-type="button"></button>
                             </div>
                         </li>
                     </ul>
@@ -111,18 +146,18 @@
 
     <!-- footer (s) -->
     <footer class="footer">
-        <div class="footer__inner">
+        <div class="inner">
             <div class="container-left">
-                <span class="footer__logo">
+                <span class="logo">
                     <img class="img" src="./assets/image/logo_footer.svg" alt="footer logo">
                 </span>
-                <ul class="footer__list">
+                <ul class="list-default">
                     <li>(주)Cloudgroup</li>
                     <li>대표자 홍길동</li>
                     <li>서울특별시 서초구 매매로 999, 99층 999호(양재동,ABC빌딩)</li>
                     <li>이메일 : abc@cloudgroup</li>
                 </ul>
-                <ul class="footer__list">
+                <ul class="list-default">
                     <li>Tel : 02-999-9999</li>
                     <li>사업자등록번호 : 000-00-000000</li>
                     <li>통신판매업신고 : 제20220-서울서초-0000호</li>
@@ -153,7 +188,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- swiper (e) -->
-
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="js/main/main.js"></script>
     <!-- script (e) -->
 </body>
