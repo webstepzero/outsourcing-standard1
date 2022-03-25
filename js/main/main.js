@@ -29,18 +29,42 @@ let swiper = new Swiper(".swiper-container", {
       // console.log(
       //   "다른 슬라이드(다음 또는 이전)로의 애니메이션 시작 시 이벤트가 발생"
       // );
-      swiperProgressBar.classList.remove("animate");
-      swiperProgressBar.classList.remove("active");
-      swiperProgressBar.classList.add("active");
+      if (this.autoplay.running) {
+        console.log(this.autoplay.running);
+        swiperProgressBar.classList.remove("animate");
+        swiperProgressBar.classList.remove("active");
+        swiperProgressBar.classList.add("active");
+      }
     },
     slideChangeTransitionEnd: function () {
       // console.log(
       //   "다른 슬라이드(다음 또는 이전)로의 애니메이션 후 이벤트가 시작"
       // );
-      swiperProgressBar.classList.add("animate");
+      if (this.autoplay.running) {
+        swiperProgressBar.classList.add("animate");
+      }
     },
   },
 });
+
+const pauseButton = document.querySelector(".slide-pause");
+
+const pause = (() => {
+  let status = false;
+  return () => {
+    if (!status) {
+      swiper.autoplay.stop();
+      swiperProgressBar.classList.remove("animate");
+    } else {
+      swiper.autoplay.start();
+      swiperProgressBar.classList.add("animate");
+    }
+    status = !status;
+  };
+})();
+
+pauseButton.onclick = pause;
+
 // $(".swiper-container").hover(
 //   function () {
 //     swiper.autoplay.stop();

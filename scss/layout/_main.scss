@@ -203,6 +203,21 @@
         }
       }
     }
+    .slide-pause {
+      position: absolute;
+      top: 50%;
+      right: -6rem;
+
+      width: 16px;
+      height: 16px;
+
+      transform: translateY(-50%);
+
+      color: transparent;
+      background: url("../../assets/image/icon_pause.png") center center/cover
+        no-repeat;
+      font-size: 1px;
+    }
 
     /* 여기까지 */
   }
